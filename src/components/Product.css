@@ -41,16 +41,17 @@
 
 .cart-btn {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
 }
 
 .cart-btn button {
     padding: 5px 10px;
+    width: 30%;
     border: none;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .cart-btn .btn-dlt {

@@ -42,3 +42,14 @@
     list-style-type: none;
     color: orange;
 }
+
+.cart-count {
+    margin-left: 10px;
+    background-color: rgb(255, 145, 0);
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
