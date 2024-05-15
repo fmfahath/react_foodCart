@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css';
+import { cartContext } from '../App';
 
-const Header = ({ cart }) => {
+
+
+const Header = () => {
+
+    const { cart } = useContext(cartContext);
+
     return (
         <div className='navbar'>
             <div className='logo'>

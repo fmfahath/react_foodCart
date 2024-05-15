@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Home.css'
 import Product from "./Product"
 import data from '../data.json'
+import { cartContext } from '../App'
 
-const Home = ({ cart, setCart }) => {
+const Home = () => {
 
+    const { cart, setCart } = useContext(cartContext);
     const [productData, setProductData] = useState(data);
 
     return (
