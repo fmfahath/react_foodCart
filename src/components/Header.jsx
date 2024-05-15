@@ -11,7 +11,7 @@ const Header = () => {
             <div className="nav-link">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/viewCart">View Cart</Link></li>
+                    <li><Link to="/cart">View Cart</Link></li>
                 </ul>
             </div>
         </div>

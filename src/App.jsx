@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
-import ViewCart from './components/ViewCart'
+import Cart from './components/Cart'
 
 function App() {
 
@@ -10,10 +10,12 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/viewCart' element={<ViewCart />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   )
